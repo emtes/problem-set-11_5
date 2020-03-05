@@ -29,30 +29,29 @@ Answer the following questions in `exercises.py`. Run unit test with the `pytest
 
 5. **Invert a Binary Tree:** Invert a binary tree.
 
-**Example:**
-Input:
-  ```
-      4
-    /   \
-    2     7
-  / \   / \
-  1   3 6   9
-  ```
+    Input:
+      ```
+          4
+        /   \
+        2     7
+      / \   / \
+      1   3 6   9
+      ```
 
-  Output:
-  ```
+      Output:
+      ```
 
-      4
-    /   \
-    7     2
-  / \   / \
-  9   6 3   1
-  ```
+          4
+        /   \
+        7     2
+      / \   / \
+      9   6 3   1
+      ```
 
-  **Trivia:**
-  This problem was inspired by this original tweet by Max Howell:
+      **Trivia:**
+      This problem was inspired by this original tweet by Max Howell:
 
-  > Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so f*** off.
+      > Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so f*** off.
 
 6. **Second Minimum Node:** Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node's value is the smaller value among its two sub-nodes. More formally, the property `root.val = min(root.left.val, root.right.val)` always holds.
 
@@ -60,7 +59,7 @@ Given such a binary tree, you need to output the second minimum value in the set
 
 If no such second minimum value exists, output `-1` instead.
 
-  **Example 1:**
+  Example 1:
   ```
   Input: 
       2
@@ -70,17 +69,17 @@ If no such second minimum value exists, output `-1` instead.
       5   7
   ```
 
-  **Output:** 5
-  **Explanation**: The smallest value is 2, the second smallest value is 5.
+  Output: 5
+  Explanation: The smallest value is 2, the second smallest value is 5.
   
 
-  **Example 2:**
+  Example 2:
   ```
   Input: 
       2
     / \
     2   2
   ```
-  **Output:** -1
-  **Explanation**: The smallest value is 2, but there isn't any second smallest value.
+  Output: -1
+  Explanation: The smallest value is 2, but there isn't any second smallest value.
   

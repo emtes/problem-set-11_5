@@ -1,37 +1,45 @@
-def BinaryTreeList():
+def BinaryTreeList(root):
+    return [root, [], []]
+
+
+def insert_left(root):
+    sub_tree = sub_tree
+
+
+def insert_right(root):
     pass
 
 
 class BinaryTree:
     def __init__(self, root=None):
         self.root = root
-        self.left_child = None
-        self.right_child = None
+        self.left = None
+        self.right = None
 
     def __repr__(self):
-        return f"[[ Root: {self.root}. LChild:[{self.left_child}]. RChild:[{self.right_child}] ]]"
+        return f"[[ Root: {self.root}. LChild:[{self.left}]. RChild:[{self.right}] ]]"
 
     def insert_left(self, root):
         new_tree = BinaryTree(root)
-        if self.left_child:
-            new_tree.left_child = self.left_child
-            self.left_child = new_tree
+        if self.left:
+            new_tree.left = self.left
+            self.left = new_tree
         else:
-            self.left_child = new_tree
+            self.left = new_tree
 
     def insert_right(self, root):
         new_tree = BinaryTree(root)
-        if self.right_child:
-            new_tree.right_child = self.right_child
-            self.right_child = new_tree
+        if self.right:
+            new_tree.right = self.right
+            self.right = new_tree
         else:
-            self.right_child = new_tree
+            self.right = new_tree
 
-    def get_left_child(self):
-        return self.left_child
+    def get_left(self):
+        return self.left
 
-    def get_right_child(self):
-        return self.right_child
+    def get_right(self):
+        return self.right
 
     def set_root_val(self, value):
         self.root = value
@@ -41,20 +49,23 @@ class BinaryTree:
         return self.root
 
 
-def preorder(node):
+def preorder(node): #nlr
     pass
 
 
-def postorder():
+def postorder(): #lrn
     pass
 
 
-def inorder():
+def inorder(): #lnr
     pass
 
 
-def is_unival_tree():
-    pass
+def is_unival_tree(root):
+    if not root:
+        return True
+    seen = set()
+
 
 
 def invert():
@@ -63,9 +74,3 @@ def invert():
 
 def second_minimum_node():
     pass
-
-
-# Quick tests
-a = BinaryTree(5)
-a.insert_left(4)
-print(a)
